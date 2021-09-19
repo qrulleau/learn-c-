@@ -1,0 +1,41 @@
+// Variable :
+string Test = "maria";
+int lenghtTest = Test.Length;
+
+// display variable :
+
+Console.WriteLine($"My name is {Test} and i'm {lenghtTest}");
+
+//method for remove space or leading in variable :
+
+string greeting = "      Hello World!       ";
+Console.WriteLine($"[{greeting}]");
+
+string trimmedGreeting = greeting.TrimStart();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.TrimEnd();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+trimmedGreeting = greeting.Trim();
+Console.WriteLine($"[{trimmedGreeting}]");
+
+//Method for replay word in a variable :
+
+string sayHello = "Hello World!";
+Console.WriteLine(sayHello);
+sayHello = sayHello.Replace("Hello", "Greetings");
+Console.WriteLine(sayHello);
+
+//Methode to transform text in uppercase or Lowercase
+
+Console.WriteLine(sayHello.ToUpper());
+Console.WriteLine(sayHello.ToLower());
+
+//Method to search a word, return a boolean
+
+string songLyrics = "You say goodbye, and I say hello";
+Console.WriteLine(songLyrics.Contains("goodbye"));
+Console.WriteLine(songLyrics.Contains("greetings"));
+
+//there is Also StartsWith & EndsWith
